@@ -1,0 +1,36 @@
+{
+  "name": "blog-tech",
+  "version": "1.0.0",
+  "description": "backend del proyecto BlogTech",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node ./api/index.js",
+    "dev:auth": "nodemon --exec babel-node authMS/index.js",
+    "test": "jest",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "Jamutaq Ortega",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-list-routes": "^1.1.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.7",
+    "nanoid": "^3.1.25",
+    "pm2": "^5.1.2",
+    "socket.io": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "eslint": "^8.0.1",
+    "jest": "^27.2.0",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.6"
+  }
+}
